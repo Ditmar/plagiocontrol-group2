@@ -15,7 +15,7 @@
     left: 0px;
     top: calc(50% - 34px/2 + 1px);
     margin-right: 120px;
-    /* Bold/24px */
+
 
     font-family: 'Mulish';
     font-style: normal;
@@ -24,7 +24,6 @@
     line-height: 30px;
     letter-spacing:1px;
 
-    /* grayscale / black */
 
     color: #252733;
     }
