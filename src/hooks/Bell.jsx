@@ -7,7 +7,7 @@ class Bell extends Component {
         super(props)
 
             this.state = {
-                isLoggendIn: true //true tiene notifi , false no tiene notifi
+                isLoggendIn: true
             }
         
     }

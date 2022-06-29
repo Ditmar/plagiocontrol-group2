@@ -1,52 +1,46 @@
 .padre {
     display: flex;
     justify-content: center;
-    margin: 10px;
+    margin: 0.625rem;
     align-items: center;
   }
   .hijo {
-    padding: 5px;
-    margin: 1px;
+    padding:0.313rem;
+    margin: 0.063rem;
   }
 
 
     .titulo{
-    height: 34px;
-    left: 0px;
+    height: 2.125rem;
     top: calc(50% - 34px/2 + 1px);
-    margin-right: 120px;
-    /* Bold/24px */
-
+    margin-right: 7.5rem;
     font-family: 'Mulish';
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
-    line-height: 30px;
-    letter-spacing:1px;
-
-    /* grayscale / black */
-
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+    letter-spacing:0.063rem;
     color: #252733;
     }
 
   .containerInput{
-    width: 453px;
-    height: 26px;
-    left: 415px;
-    top: 13px;
+    width: 28.313rem;
+    height: 1.625rem;
+    left: 25.938rem;
+    top: 0.813rem;
   }
   .inputBuscar{
-    width: 413px;
-    height: 24px;
-    left: 415px;
-    top: 13px;
+    width: 25.813rem;
+    height: 1.5rem;
+    left: 25.938rem;
+    top: 0.813rem;
     background:  #D9D9D9;
     border: none;
 
   }
   button{
-    height: 26px;
-    width: 36px;
+    height: 1.625rem;
+    width: 2.25rem;
     color: #C5C7CD;
     border: none;
   }
@@ -55,52 +49,47 @@
     align-items: center;
 }
 .hijo2{
-  margin-bottom: 10px;
-  margin-right: 5px;
+  margin-bottom: 0.625rem;
+  margin-right: 0.313rem;
 }
 
   .usuario{
-    width: 200px;
-    height: 10px;
-    
-    /* SemiBold/14px */
-    
+    width: 12.5rem;
+    height: 0.625rem;    
     font-family: 'Mulish';
     font-style: normal;
     font-weight: 600px;
-    font-size: 14px;
-    line-height: 20px;
-    /* or 143% */
+    font-size: 0.875rem;
+    line-height: 1.25rem;
     text-align: right;
-    letter-spacing: 0.2px;
+    letter-spacing: 0.013rem;
     }
 .avatar{
-width: 44px;
-height: 44px;
-right: 0px;
+width: 2.75rem;
+height: 2.75rem;
 top: calc(50% - 44px/2);
 border: 1.5px solid #DFE0EB;
 border-radius: 50%;
-margin-top: 10px;
+margin-top: 0.625rem;
 }
 .icon{
   position: relative;
 }
 .campana{
-width: 25px;
-height: 25px;
+width: 1.563rem;
+height: 1.563rem;
 color: #C5C7CD;
 }
 .counter{
-  width: 1px;
-  height: 1px;
+  width: 0.063rem;
+  height: 0.063rem;
   background-color: #3751FF;
   border-radius: 50%;
-  padding: 5px; 
+  padding: 0.313rem; 
   position: absolute;
-  top: 52px;
-  margin-left: 10px;
-  border: 1.5px solid #DFE0EB;
+  top: 3.25rem;
+  margin-left: 0.625rem;
+  border: 0.094rem solid #DFE0EB;
 }
  
 
