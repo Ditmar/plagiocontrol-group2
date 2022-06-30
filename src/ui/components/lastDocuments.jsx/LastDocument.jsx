@@ -1,163 +1,80 @@
-import React from 'react'
 
-export const LastDocument = () => {
-    /* hecho */
-    let principal = {
+import React from 'react'
+import LastTableDocument from './LastTableDocument '
+
+export const LastDocument = ({title='Ultimos documentos Publicados', group='Group: ', support='Support'}) => {
+    const main = {
         boxSizing: 'border-box',
         position: 'absolute',
-        left: '32px',
-        right: '0px',
-        top: '32px',
-        bottom: '0px',
+        left: '2rem',
+        right: '0rem',
+        top: '2rem',
+        bottom: '0rem',
         background: '#FFFFFF',
-        border: '1px solid #DFE0EB',
-        borderRadius: '8px',
-        /* mas codigo */
-        width: '1122px',
-        height: '336px',
-        borderRadius: '8px',
+        border: '0.063rem solid #DFE0EB',
+        borderRadius: '0.5rem',
+        width: '70.125rem',
+        height: '21rem',
+        borderRadius: '0.5rem',
     }
-    let h1 = {
-        height: '24px',
-        left: '32px',
-        right: '178px',
-        top: '32px',
+    
+    const titleDocument = {
+        height: '1.5rem',
+        left: '2rem',
+        right: '11.125rem',
+        top: '2rem',
         fontFamily: 'Mulish, Arial',
         fontStyle: 'normal',
-        fontSize: '19px',
-        lineHeight: '24px',
-        letterSpacing: '0.4px',
+        fontSize: '1.188rem',
+        lineHeight: '1.5rem',
+        letterSpacing: '0.025rem',
         color: '#252733',
-        /* mas codigo */
         fontWeight: '700',
-        size: '19px',
-        lineHeight: '23.85px',
-        paddingLeft: '32px',
-        paddingTop: '15px',
+        size: '1.188rem',
+        lineHeight: '1.491rem',
+        paddingLeft: '2rem',
+        paddingTop: '0.938rem',
     }
-    let sub ={
-        height: '16px',
-        left: '32px',
-        right: '178px',
-        top: '64px',
+    const subtitle ={
+        height: '1rem',
+        left: '2rem',
+        right: '11.125rem',
+        top: '4rem',
         fontFamily: 'Mulish, Arial',
         fontStyle: 'normal',
-        fontSize: '12px',
-        lineHeight: '16px',
-        letterSpacing: '0.1px',
-        /* mas codigo */
-        width: '912px',
+        fontSize: '0.75rem',
+        lineHeight: '1rem',
+        letterSpacing: '0.006rem',
+        width: '57rem',
         fontWeight: '400',
-        size: '12px',
-        lineHeight: '16px',
-        paddingLeft: '32px',
-        marginBottom: '36px',
+        size: '0.75rem',
+        lineHeight: '1rem',
+        paddingLeft: '2rem',
+        marginBottom: '2.25rem',
         color: '#9FA2B4',
     }
-    let infor = {
-        height: '20px',
-        left: '32px',
-        right: '136px',
-        top: 'calc(50% - 20px/2 + 1px)',
-        fontFamily: 'Mulish, Arial',
-        fontStyle: 'normal',
-        fontWeight: '600',
-        fontSize: '14px',
-        lineHeight: '20px',
-        letterSpacing: '0.2px',
-        color: '#252733',
-        /* mas codigo */
-        width: '954px',
-        paddingLeft: '32px',
-    }
-    let linkeo = {
-        position: 'absolute',
-        height: '20px',
-        left: '0px',
-        right: '105px',
-        //top: calc(50% - 20px/2);
-        fontFamily: 'Mulish, Arial',
-        fontStyle: 'normal',
-        fontWeight: '600',
-        fontSize: '14px',
-        lineHeight: '20px',
-        textAlign: 'right',
-        letterSpacing: '0.2px',
-    }
-    let a = {
-        textDecoration: 'none',
-        color: '#3751FF',
-    }
-    let pagina = {
-        position: 'absolute',
-        width: '80px',
-        height: '20px',
-        right: '32px',
-        //top: calc(50% - 20px/2 + 1px);
-        fontFamily: 'Mulish, Arial',
-        fontStyle: 'normal',
-        fontWeight: '600',
-        fontSize: '14px',
-        lineHeight: '20px',
-        textAlign: 'right',
-        letterSpacing: '0.2px',
-        color: '#9FA2B4',
-    }
-    let hr = {
-        position: 'absolute',
-        height: '0px',
-        left: '0px',
-        right: '0px',
-        //top: calc(50% - 0px/2);
-        border: '1px solid #DFE0EB',
-    }
-
+    
   return (
-    <div style={principal}>
+    <div style={main}>
         
         <div>
-            <h1 style={h1}>Ultimos Documentos Publicados</h1>
-            <div style={sub}>
-                <span>Group: </span>
-                <span><b>Support</b></span>
+            <h1 style={titleDocument}>{title}</h1>
+            <div style={subtitle}>
+                <span>{group}</span>
+                <span><b>{support}</b></span>
             </div>
     
             <table>
-                <tbody >
-                    <tr>
-                      <td style={infor}>
-                            Análisis de la investigación sobre la radio en Bolivia ...
-                      </td>
-                      <td style={linkeo}>
-                        <a style={a} href=''>View details</a>
-                      </td>
-                        <td style={pagina}>321 Pag.</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <hr style={hr} />
-                        <br></br>
-                      </td>                
-                    </tr>
-
-                    <tr>
-                      <td style={infor}>
-                          Análisis bibliométrico y de redes sociales en tesis ...
-                      </td>
-                      <td style={linkeo}>
-                        <a style={a} href=''>View details</a>
-                      </td>
-                      <td style={pagina}>120 Pag.</td>
-                    </tr>
-
-                    <tr>
-                      <td>
-                        <hr style={hr} />
-                        <br></br>
-                      </td>                
-                    </tr>
-                   
-                </tbody>
+              <LastTableDocument listData={[
+                  {id: 1, information:'Análisis de la investigación sobre la radio en Bolivia ...',
+                  link:'View details',
+                  pages:'321 Pag.'},
+                  {id: 2, information:'Análisis bibliometrico y de redes sociales en tesis ...',
+                  link:'View details',
+                  pages:'120 Pag.'}
+              ]}
+              />
+                
             </table>
         </div>
     </div>
