@@ -63,14 +63,21 @@ const LastTableDocument  = ({listData}) => {
             {listData.map(item => 
                 <tr key={item.id} style={table}>          
                     <td style={information}>
+                        <br></br>
                         {item.information}
                     </td>
                     <td style={link}>
-                        <a style={a} href='{item.url}'>{item.link}</a>
-                    </td>
-                    <td style={numberPage}>{item.pages}</td>
-                    <td >
                         <br></br>
+                        <a style={a} href='{item.url}'>{item.link}</a> 
+                    </td>
+                    
+                    <td style={numberPage}>
+                        <br></br>
+                        {item.pages}
+                    </td>
+
+                    <td>
+                    <br></br><br></br>
                         <hr style={hr} />
                     </td> 
                 </tr> 

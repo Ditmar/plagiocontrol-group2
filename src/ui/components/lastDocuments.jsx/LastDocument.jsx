@@ -1,6 +1,7 @@
 
 import React from 'react'
 import LastTableDocument from './LastTableDocument '
+import './LastDocument.css';
 
 export const LastDocument = ({title='Ultimos documentos Publicados', group='Group: ', support='Support'}) => {
     const main = {
