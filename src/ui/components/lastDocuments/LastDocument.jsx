@@ -9,7 +9,7 @@ export const LastDocument = ({title='Ultimos documentos Publicados', group='Grou
         position: 'absolute',
         left: '7.5rem',
         right: '0rem',
-        top: '15rem',
+        top: '18.5rem',
         bottom: '0rem',
         background: '#FFFFFF',
         border: '0.063rem solid #DFE0EB',

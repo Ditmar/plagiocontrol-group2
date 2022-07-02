@@ -4,19 +4,29 @@ body {
     background: #F7F8FC;
 }
 .container{
-    
-    position: 'relative';
+    display: flex;
+    position: absolute;
+    top: 8rem;
+    left: 8.3rem;
+    gap: 10rem  ; 
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    flex-grow: 4;
+    color: #9FA2B4;
+  
+  /* display: flex;
+    position: 'absolute';
     left: '7.5rem';
     right: '0rem';
     top: '50rem';
-    display: flex;
     gap: 8rem  ; 
     justify-content: space-evenly;
     align-items: center;
     flex-direction: row;
     flex-grow: 4;
     color: #9FA2B4;
-    padding: 1rem;
+    padding: 1rem; */
     
   }
   
