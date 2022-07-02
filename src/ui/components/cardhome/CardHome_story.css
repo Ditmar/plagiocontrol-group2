@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&family=Tapestry&display=swap');
+
+body {
+    background: #F7F8FC;
+}
+.container{
+    
+    position: 'relative';
+    left: '7.5rem';
+    right: '0rem';
+    top: '50rem';
+    display: flex;
+    gap: 8rem  ; 
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    flex-grow: 4;
+    color: #9FA2B4;
+    padding: 1rem;
+    
+  }
+  
+  .box {
+    box-sizing: border-box;
+    align-items: center;
+    background: #FFFFFF;
+    border: 0.063rem solid #DFE0EB;
+    border-radius:0.5rem 0.5rem ;
+    border-color: #DFE0EF;
+    display: flex;
+    justify-content:space-evenly;
+    cursor: pointer;
+    transition: transform 200ms ease-in;
+    width: 16.125rem;
+    height: 8.375rem;
+    top: 8rem;
+    
+  }
+  
+   
+  .box-body {
+    
+    display: flexbox;
+    text-align: center;
+   
+  }
+  
+  .box_title {
+    
+    line-height: 6.25rem;
+    left: 29rem;
+    right: 0.75rem;
+    top: 1.5rem;
+    font-size: 1.188rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.025rem;
+    vertical-align: top;
+    font-style: normal;
+   
+  }
+    
+  .box_number {
+    line-height: 3.125rem;
+    line-height: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-family:'sans';
+    vertical-align: top;
+  }
+  
+  .box:hover { 
+      border-color: #3751ff;
+      transition: all 0.7s linear;
+      color: #3751ff;
+    }
+    

@@ -11,6 +11,7 @@ import { Register } from "./Register/Register"
 import { Login } from "./Login/Login"
 import { ListDocs } from "./listDocs/ListDocs"
 import { Home } from "./Home/Home"
+import { Report } from "./Report/Report"
 
 
 const Navigation = () => {
@@ -28,6 +29,8 @@ const Navigation = () => {
                 <Route path="/login" element={<Login />}>
                 </Route>
                 <Route path="/list-docs" element={<ListDocs />}>
+                </Route>
+                <Route path="/report" element={<Report />}>
                 </Route>
             </Routes>
         </BrowserRouter>

@@ -7,9 +7,9 @@ export const LastDocument = ({title='Ultimos documentos Publicados', group='Grou
     const main = {
         boxSizing: 'border-box',
         position: 'absolute',
-        left: '2rem',
+        left: '7.5rem',
         right: '0rem',
-        top: '2rem',
+        top: '15rem',
         bottom: '0rem',
         background: '#FFFFFF',
         border: '0.063rem solid #DFE0EB',
