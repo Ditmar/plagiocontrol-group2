@@ -4,7 +4,7 @@ import React, { Fragment } from 'react'
  const Title = (props) => {
      return(
         <Fragment>
-            <h4 className='titulo'>Overview {props.Pagina} </h4>
+            <h4 className='title'>Overview {props.Page} </h4>
         </Fragment>
 
      )

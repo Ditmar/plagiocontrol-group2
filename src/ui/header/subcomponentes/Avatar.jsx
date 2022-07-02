@@ -1,10 +1,10 @@
 import React, { Fragment } from 'react'
 
-const Avatar = ({urlImagen}) => {
+const Avatar = ({urlImage}) => {
 
     return(
         <Fragment>
-            <img src={urlImagen} alt="" className=" avatar"/>
+            <img src={urlImage} alt="" className=" avatar"/>
         </Fragment>
     );
 }

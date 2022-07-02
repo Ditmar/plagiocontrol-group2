@@ -17,7 +17,7 @@ class Bell extends Component {
             return(
                 <div className="icons">
                 <div className="incon">
-                <FontAwesomeIcon icon={faBell} className="campana"/> 
+                <FontAwesomeIcon icon={faBell} className="bell"/> 
                 <div className="counter"></div>  
                 </div>
                  </div>
@@ -26,7 +26,7 @@ class Bell extends Component {
             return(
                 <div className="icons">
                     <div className="incon">
-                    <FontAwesomeIcon icon={faBell} className="campana"/> 
+                    <FontAwesomeIcon icon={faBell} className="bell"/> 
                     </div>
                  </div>
         
