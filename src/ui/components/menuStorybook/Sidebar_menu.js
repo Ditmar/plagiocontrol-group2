@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import BurgerBotton from "./BurgerButton";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import icon_11 from "./iconos/icon_11.png";
 import icon_22 from "./iconos/icon_22.png";
 import icon_33 from "./iconos/icon_33.png";
@@ -7,24 +9,21 @@ import icon_55 from "./iconos/icon_55.png";
 import icon_66 from "./iconos/icon_66.png";
 import icon_77 from "./iconos/icon_77.png";
 import logo1 from "./iconos/logo1.png";
-import BurgerBotton from "./BurgerButton";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./Sidebar_menu.scss";
-const Sidebar_menu = () => {
+import { PropTypes } from "prop-types";
+const Sidebar_menu = ({name="Plagio Control"}) => {
+    
     const [Clicked,setCliked] = useState(false);
     const handlerClick = ()=>{
         setCliked(!Clicked);
     }
-    console.log(Clicked);
     return (
-        <Router>
-            <div className="burguer">
-              <BurgerBotton Clicked={Clicked} handlerClick={handlerClick}/>
-            </div>
-            <div className={Clicked ? 'sidebar2':'sidebar'}>
+        <div>
+            <BurgerBotton Clicked={Clicked} handlerClick={handlerClick}/>
+            <div className={Clicked ? 'sidebarMovil':'sidebarDesktop'}>
                 <ul>
                     
-                    <div className="div2"><img className="logo" src={logo1}/>Plagio Control</div>
+                    <div className="box"><img className="logoLeonel" src={logo1}/><div>{name}</div></div>
                     <li>
                         <img src={icon_11}/>
                         <Link src ={icon_11} to="/">Inicio</Link>
@@ -50,15 +49,18 @@ const Sidebar_menu = () => {
                         <Link to="/">Reportes Generales</Link>
                     </li>
                     <hr/>
-                    <li>
+                    <li className="settingStyles">
                         <img src={icon_77}/>
-                        <Link to="/">Settings</Link>
+                        <Link to="/" >Settings</Link>
                     </li>
                 </ul>
                 
             </div>
-        </Router>
+        </div>
         
     )
+}
+Sidebar_menu.prototype = {
+    name: PropTypes.string,
 }
 export default Sidebar_menu;

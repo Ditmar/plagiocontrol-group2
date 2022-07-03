@@ -1,0 +1,12 @@
+import React, { useState } from "react";
+const BurgerButton = (props) =>{
+   return (
+   <div className="burger">
+      <div onClick={()=>{props.handlerClick();}} className="blocksButton">
+        <div />
+        <div />
+        <div />
+      </div>
+   </div>)
+}
+export default BurgerButton;
