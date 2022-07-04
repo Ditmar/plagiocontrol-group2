@@ -1,0 +1,104 @@
+.dad {
+    display: flex;
+    justify-content: center;
+    margin: 0.625rem;
+    align-items: center;
+    margin-left: 1rem;
+  }
+  .son {
+    padding:0.313rem;
+    margin: 0.063rem;
+  }
+
+
+    .title{
+    height: 2.125rem;
+    top: calc(50% - 34px/2 + 1px);
+    margin-right: 12rem;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+    letter-spacing:0.063rem;
+    color: #252733;
+    width:16rem;
+    }
+
+  .containerInput{
+    width: 28.313rem;
+    height: 1.625rem;
+    left: 25.938rem;
+    top: 0.813rem;
+  }
+  .inputSearch{
+    width: 25.813rem;
+    height: 1.5rem;
+    left: 25.938rem;
+    top: 0.813rem;
+    background:  #D9D9D9;
+    border: none;
+
+  }
+  button{
+    height: 1.625rem;
+    width: 2.25rem;
+    color: #C5C7CD;
+    border: none;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+  }
+.half{
+    display: flex;
+    align-items: center;
+}
+.son2{
+  margin-bottom: 0.625rem;
+  margin-right: 0.313rem;
+}
+
+  .user{
+    width: 12.5rem;
+    height: 0.625rem;    
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 600px;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    text-align: right;
+    letter-spacing: 0.013rem;
+    }
+.avatar{
+width: 2.75rem;
+height: 2.75rem;
+top: calc(50% - 44px/2);
+border: 1.5px solid #DFE0EB;
+border-radius: 50%;
+margin-top: 0.625rem;
+}
+.icon{
+  position: relative;
+}
+.bell{
+width: 1.563rem;
+height: 1.563rem;
+color: #C5C7CD;
+}
+.counter{
+  width: 0.063rem;
+  height: 0.063rem;
+  background-color: #3751FF;
+  border-radius: 50%;
+  padding: 0.313rem; 
+  position: absolute;
+  top: 4.2rem;
+  margin-left: 0.625rem;
+  border: 0.094rem solid #DFE0EB;
+}
+
+.icons{
+  margin-left: 0.5rem;
+}
+
+
+  
