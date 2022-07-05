@@ -19,7 +19,9 @@ const Sidebar_menu = ({ name = "Plagio Control"}) => {
     }
     return (
         <div>
+            <div className="burger">
             <BurgerButton Clicked = { Clicked } handlerCLick = { handlerCLick }/>
+            </div>
             <div className={Clicked ? 'sidebarMovil':'sidebarDesktop'}>
                 <ul>
                     <div className="box"><img className="logoLeonel" src={ logo1 }/>
