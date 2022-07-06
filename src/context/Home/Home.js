@@ -8,7 +8,6 @@ export const Home = () => {
         Home pages
 
             <CardHome />
-
             <LastDocument />
 
     </div>

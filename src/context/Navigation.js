@@ -5,8 +5,8 @@ import {
     Route,
 } from "react-router-dom";
 
-import { Works } from "./Works/Works"
-import { Review } from "./Review/Review"
+import { Works } from './Works/Works'
+import { Review } from './Review/Review'
 import { Register } from './Register/Register'
 import { Login } from './Login/Login'
 import { ListDocs } from './listDocs/ListDocs'
