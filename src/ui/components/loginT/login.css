@@ -73,14 +73,18 @@
     color: #9FA2B4;
 }
 .conjunto {
-    margin-left: 32px;
-    width: 19.75rem;
+    margin-left: 50px;
+    width: 18rem;
     margin-top: 1.5rem;
     padding: 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 label {
     width: 19.75rem;
     height: 1rem;
+    margin-left: 2rem;
     font-family: 'Mulish';
     font-style: normal;
     font-weight: 700;
@@ -88,8 +92,11 @@ label {
     line-height: 0.938rem;
     letter-spacing: 0.019rem;
     text-transform: uppercase;
+    text-align: justify;
 }
 .dato {
+    text-align: center;
+    align-items: center;
     width: 18rem;
     height: 2.625rem;
     padding: 0.688rem 1rem;
@@ -118,7 +125,7 @@ a {
 .olvidaste {
     position: absolute;
     right: 3.125rem;
-    top: 22.4rem;
+    top: 21.8rem;
     font-weight: 400;
     font-size: 0.625rem;
     line-height: 0.813rem;
