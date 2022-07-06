@@ -1,11 +1,11 @@
-import React from "react";
-import { CardHome } from "../../ui/components/cardhome/CardHome";
+import React from 'react';
+import { CardHome } from '../../ui/components/cardhome/CardHome';
 
 
 
 export const Report = () => {
     return <div>
-        Home pages
+        Report pages
         <CardHome />
         
     </div>
