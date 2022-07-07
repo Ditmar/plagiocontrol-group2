@@ -31,7 +31,7 @@ export const Register = () => {
 
     const togglePassword = () => {
       handlerResetForm({ ...password, showPassword: !password.showPassword });
-      handlerResetForm({ ...repassword, showRePassword: !repassword.showRePassword,});
+      handlerResetForm({ ...repassword, showRePassword: !repassword.showRePassword});
     };
 
     return (
@@ -85,8 +85,7 @@ export const Register = () => {
                         {form.showRePassword ? <Visibility /> : <VisibilityOff /> }
                         </IconButton>
                       </InputAdornment>
-                    }
-                    
+                    }                    
                     fullWidth 
                     label = 'repassword' 
                     placeholder = 'Repeat password' 
