@@ -208,21 +208,22 @@
   {
     /* 8666681_edit_icon 1 */
   
-  width: 1.75rem;
+  width: 2.8rem;
   height: 2rem;
   left: 48.063rem;
   top: 0.875rem;
+  
   }
   
   .b2 {
   /* title */
   
   
-  
-  height: 0.875rem;
+  width:3.125rem;
+  height: 0.10rem;
   left: 0.75rem;
   right: 0.75rem;
-  top: calc(50% - 14px/2);
+  top: 0px;
   
   /* Bold 11 (0.5 px, CAPS) */
   
@@ -242,8 +243,8 @@
   /* grayscale / white */
   background: #F12B2C;
   color: #FFFFFF;
-  width:3.125rem ;
-  height:0.625rem;
+  
+  
   padding-left: 1.0rem;
   padding-right: 1.0rem;
   padding-top: 1.25rem;
@@ -255,7 +256,7 @@
     
     
     
-    height: 14px;
+    height: 0.10rem;
     left: 12px;
     right: 12px;
     top: calc(50% - 14px/2);
@@ -279,7 +280,7 @@
     background: #FEC400;;
     color: #FFFFFF;
     width:3.125rem ;
-    height:0.625rem;
+    
     padding-left: 1.0rem;
     padding-right: 1.0rem;
     padding-top: 1.25rem;
@@ -291,7 +292,7 @@
       
       
       
-      height: 0.875rem;
+      height: 0.10rem;
       left: 0.75rem;
       right: 0.75rem;
       top: calc(50% - 14px/2);
@@ -314,12 +315,34 @@
       /* grayscale / white */
       background: #29CC97;
       color: #FFFFFF;
-      width:40px ;
-      height:10px;
+      width:50px ;
+     
       padding-left: 0.625rem;
       padding-right: 1.25rem;
       padding-top: 1.25rem;
       padding-bottom: 1.25rem;
       border-radius: 6.25rem
       }
-   
+.paginacion {
+  
+/* Regular/14px */
+
+font-family: 'Mulish';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* or 143% */
+
+letter-spacing: 0.3px;
+
+/* grayscale / gray */
+
+color: #9FA2B4;
+position:absolute;
+right: 22%;
+}
+
+.color {
+  color: #9FA2B4;
+}

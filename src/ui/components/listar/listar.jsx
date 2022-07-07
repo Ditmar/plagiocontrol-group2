@@ -331,7 +331,7 @@ export const Listar = ({}) => {
             </TableRow>
           
         </TableBody>
-        <TableFooter>
+        <TableFooter className="paginacion">
         <TablePagination />
         </TableFooter>
         </Table>

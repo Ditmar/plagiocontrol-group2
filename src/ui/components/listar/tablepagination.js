@@ -15,7 +15,8 @@ export default function TablePaginationDemo() {
    
   
     return (
-      <TablePagination
+      <TablePagination 
+         
         component="div"
         count={1240}
         page={page}
