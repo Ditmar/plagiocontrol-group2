@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,700;0,900;1,900&display=swap');
 .main {
     background-color: #ffffff;
     text-align: center;
@@ -48,9 +49,9 @@
     width: 19.75rem;
     height: 1.875rem;
     margin-top: 2rem;
-    font-family: 'Mulish';
+    font-family: 'Mulish', sans-serif;
     font-style: normal;
-    font-weight: 700;
+    font-weight:bolder;
     font-size: 1.5rem;
     line-height: 1.875rem;
     text-align: center;
@@ -85,9 +86,9 @@ label {
     width: 19.75rem;
     height: 1rem;
     margin-left: 2rem;
-    font-family: 'Mulish';
+    font-family: 'Mulish', sans-serif;
     font-style: normal;
-    font-weight: 700;
+    font-weight: bolder;
     font-size: 0.75rem;
     line-height: 0.938rem;
     letter-spacing: 0.019rem;
@@ -95,7 +96,7 @@ label {
     text-align: justify;
 }
 .dato {
-    text-align: center;
+    text-align: left;
     align-items: center;
     width: 18rem;
     height: 2.625rem;
@@ -107,6 +108,18 @@ label {
 }
 .boton {
     padding: 1.5rem;
+}
+.ojoB {
+    position: absolute;
+    right: 3.6rem;
+    top: 23.6rem;
+    height: 18px;
+    width: 21px;
+}
+.ojo {
+    opacity: 0.3;
+    height: 100%;
+    width: 100%;
 }
 a {
     text-decoration: none;
