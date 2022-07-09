@@ -1,0 +1,48 @@
+.boxtext {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65.5rem;
+    height: 3.75rem;
+    left: 19.688rem;
+    top: 5rem;
+    background: #4497FA;
+    border-radius: 0.375rem;
+}
+.text {
+    position: absolute;
+    width: 63.313rem;
+    height: 2rem;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 43.75rem;
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    letter-spacing: 0.013rem;
+    color: #FFFFFF;
+}
+.boxtitle{
+    position: absolute;
+    display: flex;
+    height: 2.125rem;
+    width: 48.188rem;
+    left: 19.688rem;
+    border-radius: nullpx;
+
+}
+.title {
+position: absolute;
+height: 2.125rem;
+left: 0;
+right: 21.938rem;
+top: calc(50% - 2.125rem/2 + 0.063rem);
+font-family: 'Mulish';
+font-style: normal;
+font-weight: 43.75rem;
+font-size: 1.5rem;
+line-height: 1.875rem;
+letter-spacing: 0.019rem;
+vertical-align: top;
+color: #252733;
+}
