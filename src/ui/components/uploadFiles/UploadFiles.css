@@ -11,6 +11,8 @@
 }
 .sendButton{
     position: absolute;
+    padding: 10px;
+    width: 316px;
     height: 3rem;
     left: 19.688rem;
     right: 50.563rem;

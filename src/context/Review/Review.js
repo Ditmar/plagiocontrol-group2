@@ -6,11 +6,9 @@ export const Review = () => {
     return (
         <div>
             Review Page
-            <div className="boxtitle">
-                <h1 className="title">
+                <p className="title">
                     Revisar Tesis
-                </h1>
-            </div>
+                </p>
             <div className="boxtext">
                     
                     <p className="text">
