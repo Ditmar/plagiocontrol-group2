@@ -1,8 +1,11 @@
 import { Button } from "../button/button";
 import React from "react";
 import './login.css';
+import useForm from "../../../hooks/useForm";
+
 const Login = () => {
     const url = 'http://localhost:8000/server/autenthication/login';
+    const handlerChangeForm = useForm({user: "", password: ""});
     const mostrarPass = () => {
         let tipo = document.getElementById("password");
         if (tipo == "password") tipo = "text";
@@ -19,12 +22,12 @@ const Login = () => {
             <form>
                 <div className="conjunto">
                     <label htmlFor="">EMAIL</label>
-                    <input className="dato" type="text" placeholder="Email address" />
+                    <input className="dato" type="text" placeholder="Email address" name="user" onChange={handlerChangeForm}/>
                 </div>
                 <div className="conjunto">
                     <label htmlFor="">PASSWORD</label>
                     <a href="" className="olvidaste">Forgot password?</a>
-                    <input className="dato" type="text" placeholder="Password" id="password" />
+                    <input className="dato" type="password" placeholder="Password" name="user" onChange={handlerChangeForm} id="password" />
                     <button className="ojoB" onClick={mostrarPass}>
                         <img className="ojo" src="https://cdn-icons-png.flaticon.com/512/7042/7042918.png" />
                     </button>
