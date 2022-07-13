@@ -2,6 +2,7 @@ import { Button } from "../button/button";
 import React from "react";
 import './login.css';
 const Login = () => {
+    const url = 'http://localhost:8000/server/autenthication/login';
     const mostrarPass = () => {
         let tipo = document.getElementById("password");
         if (tipo == "password") tipo = "text";
