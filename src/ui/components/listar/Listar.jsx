@@ -1,6 +1,6 @@
 import   React, { useEffect, useState}  from 'react';
 import Button from '@material-ui/core/Button';
-import { FaFilter , FaSortAmountUp ,  } from 'react-icons/fa';
+import { FaFilter , FaSortAmountUp  } from 'react-icons/fa';
 import { BsThreeDotsVertical} from 'react-icons/bs';
 import { FiEdit  } from 'react-icons/fi';
 import '../../../listar.css';
@@ -67,7 +67,7 @@ import data from './data.json';
                 </TableCell>
                 <TableCell>
                   <Grid item lg={10}>
-                    <FiEdit className="editar"/>
+                    <FiEdit className="edit"/>
                       <Typography><span className="time">{info.hora}</span></Typography>
                   </Grid>
                 </TableCell>
