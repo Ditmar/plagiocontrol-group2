@@ -13,7 +13,6 @@ import { ListDocs } from './listDocs/ListDocs'
 import { Home } from './Home/Home'
 import { Report } from './Report/Report'
 
-
 const Navigation = () => {
     return (
         <BrowserRouter>
