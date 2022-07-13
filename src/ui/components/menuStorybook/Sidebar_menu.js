@@ -24,7 +24,7 @@ const Sidebar_menu = ({ name = "Plagio Control"}) => {
             </div>
             <div className={Clicked ? 'sidebarMovil':'sidebarDesktop'}>
                 <ul>
-                    <div className="box"><img className="logoLeonel" src={ logo1 }/>
+                    <div className="box"><img className="logo" src={ logo1 }/>
                         <div>{ name }</div>
                     </div>
                         
