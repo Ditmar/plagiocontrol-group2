@@ -1,6 +1,6 @@
-import React from "react";
-import Sidebar_menu from "./Sidebar_menu";
-import { BrowserRouter as Router } from "react-router-dom";
+import React from 'react';
+import Sidebar_menu from './Sidebar_menu';
+import { BrowserRouter as Router } from 'react-router-dom';
 export default {
     title: "ui/components/menuStorybook",
     component: Sidebar_menu,

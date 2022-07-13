@@ -1,16 +1,16 @@
-import React, { useState } from "react";
-import BurgerButton from "./BurgerButton";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import icon_11 from "./iconos/icon_11.png";
-import icon_22 from "./iconos/icon_22.png";
-import icon_33 from "./iconos/icon_33.png";
-import icon_44 from "./iconos/icon_44.png";
-import icon_55 from "./iconos/icon_55.png";
-import icon_66 from "./iconos/icon_66.png";
-import icon_77 from "./iconos/icon_77.png";
-import logo1 from "./iconos/logo1.png";
-import "./Sidebar_menu.scss";
-import { PropTypes } from "prop-types";
+import React, { useState } from 'react';
+import BurgerButton from './BurgerButton';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import icon_11 from './iconos/icon_11.png';
+import icon_22 from './iconos/icon_22.png';
+import icon_33 from './iconos/icon_33.png';
+import icon_44 from './iconos/icon_44.png';
+import icon_55 from './iconos/icon_55.png';
+import icon_66 from './iconos/icon_66.png';
+import icon_77 from './iconos/icon_77.png';
+import logo1 from './iconos/logo1.png';
+import './Sidebar_menu.scss';
+import { PropTypes } from 'prop-types';
 
 const Sidebar_menu = ({ name = "Plagio Control"}) => {
     const [ Clicked, setCliked ] = useState( false );
