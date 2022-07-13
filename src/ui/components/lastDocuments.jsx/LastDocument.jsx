@@ -16,7 +16,6 @@ export const LastDocument = ({title='Ultimos documentos Publicados', group='Grou
         borderRadius: '0.5rem',
         width: '70.125rem',
         height: '21rem',
-        borderRadius: '0.5rem',
     }
     
     const titleDocument = {
@@ -32,7 +31,6 @@ export const LastDocument = ({title='Ultimos documentos Publicados', group='Grou
         color: '#252733',
         fontWeight: '700',
         size: '1.188rem',
-        lineHeight: '1.491rem',
         paddingLeft: '2rem',
         paddingTop: '0.938rem',
     }
@@ -49,7 +47,6 @@ export const LastDocument = ({title='Ultimos documentos Publicados', group='Grou
         width: '57rem',
         fontWeight: '400',
         size: '0.75rem',
-        lineHeight: '1rem',
         paddingLeft: '2rem',
         marginBottom: '2.25rem',
         color: '#9FA2B4',
@@ -66,16 +63,7 @@ export const LastDocument = ({title='Ultimos documentos Publicados', group='Grou
             </div>
     
             <table>
-              <LastTableDocument listData={[
-                  {id: 1, information:'Análisis de la investigación sobre la radio en Bolivia ...',
-                  link:'View details',
-                  pages:'321 Pag.'},
-                  {id: 2, information:'Análisis bibliometrico y de redes sociales en tesis ...',
-                  link:'View details',
-                  pages:'120 Pag.'}
-              ]}
-              />
-                
+              <LastTableDocument />
             </table>
         </div>
     </div>
