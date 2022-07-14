@@ -1,3 +1,6 @@
+/*
+the font was loaded because the letters of the title cannot be made thicker
+*/
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,700;0,900;1,900&display=swap');
 .main {
     background-color: #ffffff;
@@ -44,12 +47,12 @@
     line-height: 1.5rem;
     letter-spacing: 0.025rem;
 }
-.titulo {
+.tit {
     display: inline-block;
     width: 19.75rem;
     height: 1.875rem;
     margin-top: 2rem;
-    font-family: 'Mulish', sans-serif;
+    font-family: 'Mulish';
     font-style: normal;
     font-weight:bolder;
     font-size: 1.5rem;
@@ -58,7 +61,7 @@
     letter-spacing: 0.019rem;
     color: #252733;
 }
-.comentario {
+.comment {
     display: inline-block;
     width: 19.75rem;
     height: 1.25rem;
@@ -73,7 +76,7 @@
     letter-spacing: 0.019rem;
     color: #9FA2B4;
 }
-.conjunto {
+.con {
     margin-left: 50px;
     width: 18rem;
     margin-top: 1.5rem;
@@ -95,7 +98,7 @@ label {
     text-transform: uppercase;
     text-align: justify;
 }
-.dato {
+.in {
     text-align: left;
     align-items: center;
     width: 18rem;
@@ -106,7 +109,7 @@ label {
     border: 0.063rem solid #F0F1F7;
     border-radius: 8px;
 }
-.ojoB {
+.eyeB {
     position: absolute;
     right: 3.6rem;
     bottom: 11.6rem;
@@ -114,10 +117,19 @@ label {
     width: 21px;
     border: none;
 }
-.ojo {
+.eye {
     opacity: 0.3;
     height: 100%;
     width: 100%;
+}
+.p {
+    text-decoration: none;
+    color: #9FA2B4;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
 }
 a {
     text-decoration: none;
@@ -129,11 +141,16 @@ a {
     line-height: 1.25rem;
 }
 .singup {
+    text-decoration: none;
+    font-family: 'Mulish';
+    font-style: normal;
     letter-spacing: 0.2px;
+    font-size: 0.875rem;
     color: #3751FF;
     font-weight: 600;
+    line-height: 1.25rem;
 }
-.olvidaste {
+.forgot {
     position: absolute;
     right: 3.125rem;
     top: 60%;
@@ -143,7 +160,7 @@ a {
     text-align: right;
     letter-spacing: 0.1px;
 }
-.boton {
+.button {
     align-items: center;
     text-align: center;
     width: 18rem;

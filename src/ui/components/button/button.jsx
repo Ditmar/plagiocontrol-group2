@@ -1,5 +1,5 @@
-import { PropTypes } from "prop-types";
-import { React } from "react"; 
+import { PropTypes } from 'prop-types';
+import { React } from 'react'; 
 export const Button = ({label, handleClick, size}) => {
     let scale = 18;
     if (size === 'lg') scale = 30.875;
