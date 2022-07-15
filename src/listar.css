@@ -1,0 +1,232 @@
+
+.box {
+    width:300px;
+}
+  
+.table {
+     background: #FFFFFF;
+}
+.tittle {
+    /* Lista */
+    position: absolute;
+    height: 1.5rem;
+    left: 2rem;
+    right: 43.125rem;
+    top: 2rem;
+    /* Bold 19 (0.4 px) */
+     font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.188;
+    line-height: 1.5rem;
+    /* identical to box height */
+    letter-spacing: 0.025rem;
+    /* grayscale / black */
+    color: #252733;
+}
+.header {
+    /* Detalle */
+    height: 18px;
+    left: 31px;
+    right: 649px;
+    top: 0px;
+    /* Bold/14px */
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    /* identical to box height */
+    letter-spacing: 0.013;
+    /* grayscale / gray */
+    color: #9FA2B4;
+}
+.detail1 {
+    /* Ticket name */
+    height: 1.25rem;
+    left: 6.188rem;
+    right: 40.563rem;
+    top: calc(50% - 20px/2 - 10px);
+    /* SemiBold/14px */
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    /* identical to box height, or 143% */
+    letter-spacing: 0.013rem;
+    /* grayscale / black */
+    color: #252733;
+}
+.detail2{
+    /* Ticket information */
+    height: 1rem;
+    left: 6.188rem;
+    right: 40.563rem;
+    top: calc(50% - 16px/2 + 12px);
+    /* Regular/12px */
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    /* identical to box height, or 133% */
+    letter-spacing: 0.006rem;
+    /* grayscale / gray light */
+    color: #C5C7CD;
+}
+.name {
+    /* Customer name */
+    width: 13rem;
+    height: 1.25rem;
+    right: 25.063rem;
+    top: calc(50% - 20px/2 - 10px);
+    /* SemiBold/14px */
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    /* identical to box height, or 143% */
+    letter-spacing: 0.013rem;
+    /* grayscale / black */
+    color: #252733;
+}
+.date {
+    /* Date customer */
+    width: 13rem;
+    height: 1rem;
+    right: 25.063rem;
+    top: calc(50% - 16px/2 + 12px);
+    /* Regular/12px */
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    /* identical to box height, or 133% */
+    letter-spacing: 0.1px;
+    /* grayscale / gray light */
+    color: #C5C7CD;
+    }
+.time {
+    /* Time label */
+    width: 8.75rem;
+    height: 1rem;
+    right: 13.813rem;
+    top: calc(50% - 16px/2 + 12px);
+    /* Regular/12px */
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    /* identical to box height, or 133% */
+    letter-spacing: 0.006rem;
+    /* grayscale / gray light */
+    color: #C5C7CD;
+}
+.edit{
+    /* 8666681_edit_icon 1 */
+    width: 2.8rem;
+    height: 2rem;
+    left: 48.063rem;
+    top: 0.875rem;
+}
+.b2 {
+    /* title */
+    width:3.125rem;
+    height: 0.10rem;
+    left: 0.75rem;
+    right: 0.75rem;
+    top: 0px;
+    /* Bold 11 (0.5 px, CAPS) */
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.688rem;
+    line-height: 0.875rem;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.031rem;
+    text-transform: uppercase;
+    /* grayscale / white */
+    background: #F12B2C;
+    color: #FFFFFF;
+    padding-left: 1.0rem;
+    padding-right: 1.0rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    border-radius: 6.25rem
+}
+.b3 {
+    /* title */
+    height: 0.10rem;
+    left: 12px;
+    right: 12px;
+    top: calc(50% - 14px/2);
+    /* Bold 11 (0.5 px, CAPS) */
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.688rem;
+    line-height: 0.875rem;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.031rem;
+    text-transform: uppercase;
+    /* grayscale / white */
+    background: #FEC400;;
+    color: #FFFFFF;
+    width:3.125rem ;
+    padding-left: 1.0rem;
+    padding-right: 1.0rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    border-radius: 6.25rem
+}
+.b4 {
+    height: 14px;
+    left: 12px;
+    right: 12px;
+    top: calc(50% - 14px/2);
+    /* Bold 11 (0.5 px, CAPS) */
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 14px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    /* grayscale / white */
+    color: #FFFFFF;
+    background:#29CC97;;
+    padding:8px 20px;
+    border-radius:6.25rem;
+}     
+.pagination {
+    /* Regular/14px */
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    /* or 143% */
+    letter-spacing: 0.3px;
+    /* grayscale / gray */
+    color: #9FA2B4;
+    position:absolute;
+    right: 4.5%;
+}
+.colour {
+    color: #9FA2B4;
+}
+
