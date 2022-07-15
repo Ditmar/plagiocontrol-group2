@@ -1,0 +1,222 @@
+@mixin sidebarDesktop{
+    position: fixed;
+    width: 15.938rem;
+    height:38.5rem;
+    background-color: #363740;
+    left: 0.010rem;
+    .box{
+        position: absolute;
+        height: 8px;
+        div{
+            position: relative;
+            top: 2.563rem;
+            left: 4.75rem;
+            font-family: 'Mulish';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 1.188rem;
+            line-height: 1.5rem;
+            letter-spacing: 0.025rem;
+            color: #A4A6B3;
+            opacity: 0.7;
+        }
+    }
+    .logo{
+        position: absolute;
+        max-width: 2rem;
+        top: 2.313rem;
+        left: 2rem;
+        opacity: 1;
+    }
+    ul{
+       padding: 0%;
+    }
+    li{
+        position: relative;
+        width: 15.938rem;
+        height: 3.5rem;
+        top: 8rem;
+        list-style: none;
+    }
+    img{
+        position: absolute;
+        top: 1.279rem;
+        right: 12.938rem;
+        opacity: 0.4;
+    }
+    a{
+        position: absolute;
+        height: 1.25rem;
+        left: 4.5rem;
+        right: 1.5rem;
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.25rem;
+        color: #DDE2FF;
+        text-decoration: none;
+        margin-top: 1.125rem;
+        opacity: 0.4;
+    }
+    hr{
+        position: absolute;
+        width: 15.938rem;
+        height: 0rem;
+        opacity: 0.3;
+        top: 30rem;
+        
+    }
+    .settingStyles{
+      position: relative;
+      top: 9.5rem;
+    }
+    li:hover{
+        background: #3e4049;
+        img{
+          opacity: 1;
+        }
+        a{
+          opacity: 1;
+        }
+    }
+    li:hover::after{
+        content: ".";
+        background-color: #DDE2FF;
+        color:  #DDE2FF;
+        width: 0.190rem;
+        padding-bottom: 2.303rem;
+      }
+      @media(max-width: 720px){
+        position: relative;
+        left: -20rem;
+      } 
+  }
+  .sidebarDesktop {
+    @include sidebarDesktop();  
+  }
+  .burger{
+    @media(max-width: 720px){
+      position: relative;
+      left: -1.400rem;
+      width: 3.875rem;
+      .blocksButton{
+        width: 2.188rem;
+        height: 1.875rem;
+        margin: 0.625rem 0.625rem;
+        position: relative;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        border-style: solid;
+        border-radius: 0.188rem;
+        padding-right: 0.375rem;
+        padding-top: 0.125rem;
+        padding-bottom: 0.125rem;
+        border-color: #363740;
+        background-color: #3e4049;
+        div{
+          background-color: #DDE2FF;
+          border-radius: 0.125rem;
+          width: 1.563rem;
+          height: 0.25rem;
+          margin: 0.188rem;
+          transition: .3 cubic-bezier(.8, .5, .2, 1.4);
+          transition: 1000ms;
+        }
+  
+      }
+    }
+  }
+  .sidebarMovil{
+    @media(max-width: 720px){
+        position: relative;
+        width: 25rem;
+        height:38rem;
+        background-color: #363740;
+        bottom: 0.813rem;
+        left: -0.725rem;
+    .box{
+        position: absolute;
+        height: 8rem;
+        div{
+            position: relative;
+            top: 2.563rem;
+            left: 5.625rem;
+            font-family: 'Mulish';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 1.563rem;
+            line-height: 1.5rem;
+            letter-spacing: 0.025rem;
+            color: #A4A6B3;
+            opacity: 0.7;
+        }
+    }
+    .logo{
+        position: absolute;
+        top:2.313rem;
+        left: 2rem;
+        opacity: 1;
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+    ul{
+       padding: 0%;
+    }
+    li{
+        position: relative;
+        width: 15.938rem;
+        height: 3.5rem;
+        top: 8rem;
+        list-style: none;
+    }
+    img{
+        position: absolute;
+        top: 1.279rem;
+        right: 11.875rem;
+        opacity: 0.4;
+        width: 1.563rem;
+    }
+    a{
+        position: absolute;
+        height: 1.25rem;
+        width: 10rem;
+        left: 6.25rem;
+        right: 1.5rem;
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.563rem;
+        line-height: 1.25rem;
+        color: #DDE2FF;
+        text-decoration: none;
+        margin-top: 1.125rem;
+        opacity: 0.4;
+    }
+    hr{
+        opacity: 0;
+    }
+    li:hover{
+        background: #3e4049;
+        width: 25rem;
+        img{
+          opacity: 1;
+          right: 20.938rem;
+        }
+        a{
+          opacity: 1;
+        }
+    }
+    li:hover::after{
+        content: ".";
+        background-color: #DDE2FF;
+        color:  #DDE2FF;
+        width: 0.188rem;
+        padding-bottom: 2.063rem;
+      }
+    }
+    @media (min-width:720px){
+        @include sidebarDesktop();
+      }
+  }
