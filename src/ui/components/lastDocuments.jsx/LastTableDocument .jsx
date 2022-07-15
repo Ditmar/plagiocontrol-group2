@@ -1,6 +1,6 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 
-const LastTableDocument  = ({listData}) => {
+const LastTableDocument  = () => {
     
     const information = {
         height: '1.25rem',
@@ -58,30 +58,49 @@ const LastTableDocument  = ({listData}) => {
     const table = {
         paddingTop: '10px',
     }
-  return (
-        <tbody >
-            {listData.map(item => 
-                <tr key={item.id} style={table}>          
-                    <td style={information}>
-                        <br></br>
-                        {item.information}
-                    </td>
-                    <td style={link}>
-                        <br></br>
-                        <a style={a} href='{item.url}'>{item.link}</a> 
-                    </td>
-                    
-                    <td style={numberPage}>
-                        <br></br>
-                        {item.pages}
-                    </td>
 
-                    <td>
-                    <br></br><br></br>
-                        <hr style={hr} />
-                    </td> 
-                </tr> 
-            )}
+    const [documents, setDocuments] = useState([]);
+    const getLastDocument = async() => {
+        try{
+            const response = await fetch('http://3.138.158.90:8000/server/listdatabase');
+
+            const dataDocument=await response.json();
+            setDocuments(dataDocument.data);
+            console.log(dataDocument.data);
+        } catch(error) {
+            console.log(error);
+        }
+    }
+    useEffect(()=> {
+        getLastDocument();
+    }, [])
+
+  return (
+        <tbody>
+            {
+                documents.map((item, index) => (
+                    <tr key={index} style={table}>          
+                        <td style={information}>
+                            <br></br>
+                            {item.title}
+                        </td>
+                        <td style={link}>
+                            <br></br>
+                            <a style={a} href='{item.url}'>View details</a>
+                        </td>
+                        
+                        <td style={numberPage}>
+                            <br></br>
+                            {item.pages.length} {"Pag."}
+                        </td>
+
+                        <td>
+                        <br></br><br></br>
+                            <hr style={hr} />
+                        </td> 
+                    </tr> 
+                ))
+            }
         </tbody>
   )
 }
