@@ -8,6 +8,7 @@ import VisibilityOff from '@material-ui/icons/VisibilityOff';
 import OutlinedInput from '@material-ui/core/OutlinedInput';
 
 import useForm from '../../../hooks/useForm';
+import { authService } from '../../../services/authService'
 
 export const RegisterUi = () => {
     const paperStyle = { padding: '1.875rem 1.25rem', width: '26.25rem', margin: '2.5rem auto', elevation: '1.25rem' };
@@ -27,7 +28,12 @@ export const RegisterUi = () => {
     });
 
     const { email, password, repassword } = form;
-    const onSubmit = data => console.log(data);
+    const onSubmit = (event) => {
+      event.preventDefault()
+      authService.register({ email, password })
+        .then(res => console.log(res))
+        .catch(err => console.log(err))    
+    }
 
     const togglePassword = () => {
       handlerResetForm({ ...password, showPassword: !password.showPassword });
